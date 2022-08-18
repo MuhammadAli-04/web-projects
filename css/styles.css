@@ -1,0 +1,247 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+    user-select: none;
+}
+
+
+
+
+
+
+/* navbar  */
+
+
+nav{
+    position: absolute;
+    left: 50%;
+    margin: 0 ;
+    width: inherit;
+    height: 50px;
+    background: transparent;
+    border-radius: 8px;
+    font-size:0;
+    box-shadow: 8 2px 3px rgba(0,0,6,.1);
+}
+
+
+
+
+nav a{
+    font-size: 15px;
+    text-transform: uppercase; 
+    color: white;
+    text-decoration: none;
+    line-height: 58px;
+    position: relative;
+    z-index: 1;
+    display: inline-block; 
+    text-align: center;
+}
+
+nav .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index:0;
+    background: transparent; 
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+nav a:nth-child(1){
+    width: 100px;
+}
+    
+nav .start-home, a:nth-child(1):hover~.animation{ 
+    background-color: #682efc45;
+    backdrop-filter: blur(3px);
+    width: 100px;
+    left: 0;
+}
+
+nav a:nth-child(2){ 
+    width: 110px;
+}
+
+nav a:nth-child(2):hover~.animation{
+    width: 110px;
+    backdrop-filter: blur(3px);
+    background-color: #682efc45;
+    left: 100px;
+} 
+
+nav a:nth-child(3){ 
+    width: 100px;
+}
+
+nav a:nth-child(3):hover~.animation{
+    background-color: #682efc45;
+    backdrop-filter: blur(3px);
+    width: 100px;
+    left: 210px;
+}
+
+nav a:nth-child(4){ 
+    width: 160px;
+}
+
+nav a:nth-child(4):hover~.animation{ 
+    backdrop-filter: blur(3px);
+    background-color: #682efc45;
+    width: 160px;
+    left: 310px;
+} 
+
+nav a:nth-child(5){
+    width: 120px;
+}
+
+nav a:nth-child(5):hover~.animation{
+    backdrop-filter: blur(3px);
+    background-color: #682efc45;
+    width: 120px;
+    left: 470px;
+}
+
+
+
+
+
+/*login page*/
+
+.bg-img {
+    background: url("../resources/bg.jpg"); 
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+    background: rgba(255, 255, 255, 0.174);
+}
+
+.content{
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index:999;
+    text-align:center;
+    padding: 60px 32px;
+    width:370px;
+    transform: translate(-50%,-50%);
+
+    
+    background: rgba(255, 255, 255, 0.133);
+    border: 1px solid #fff;
+    backdrop-filter: blur(3px);
+    box-shadow: 0px 0 6px 0 rgba(29, 29, 29, 0.203);
+}
+
+.content header {
+color: white;
+font-size: 33px;
+font-weight: 600;
+margin:0 0 35px 0;
+font-family: "Montserrat", sans-serif;
+}
+
+.field{
+    position: relative;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    background: rgba(255, 255, 255, 0.94);
+}
+
+.field span{
+    color: #222;
+    width: 40px;
+    line-height: 45px;
+}
+
+.field input {
+    height: 100%;
+    width: 100%; 
+    color: #222;
+    background: transparent; 
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+}
+
+.space {
+    margin: 16px 0;
+}
+
+
+.show {
+    position: absolute;
+    right: 13px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+    display: none;
+    cursor: pointer;   
+    font-family: "Montserrat", sans-serif;
+}
+
+.pass-key:valid ~ .show {
+    display: block;
+}
+
+
+pass {
+    text-align: left; 
+    margin: 50px 0 !important;
+}
+    
+.pass a {
+    color: white;
+    text-decoration: none;   
+    font-family: "Poppins", sans-serif;
+}
+    
+.pass:hover a {
+    text-decoration: underline;   
+    
+}
+    
+.field input[type="submit"] { 
+    background: #682efc; 
+    border: 1px solid #7741fd; 
+    color: white;
+    font-size: 18px; 
+    font-family: "Montserrat", sans-serif; 
+    transition: .3s ease;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+}
+    
+.field input[type="submit"]:hover {
+    background: #4a8de4f5;    
+    } 
+    
+
+.login{
+        color: white; 
+        margin: 20px 0; 
+        font-family: "Poppins", sans-serif;
+    }
+    
+i span {
+    margin-left: 8px;
+    font-weight: 500;
+    font-size: 16px;   
+    letter-spacing: 1px; font-family: "Poppins", sans-serif;
+}
